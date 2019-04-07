@@ -7,6 +7,7 @@
 # @Software: PyCharm
 # ---------------------
 
+
 class Solution(object):
     def combine(self, n, k):
         """
@@ -26,5 +27,6 @@ class Solution(object):
                 tempList.append(i)
                 self.help(resList, tempList, n, k, i + 1)
                 tempList.pop()
+
 
 

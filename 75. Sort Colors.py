@@ -13,6 +13,7 @@ class Solution(object):
         :type nums: List[int]
         :rtype: None Do not return anything, modify nums in-place instead.
         """
+
         left, point, right = 0, 0, len(nums) - 1
         while left < right and point <= right:
             if nums[point] == 0 and left < point:

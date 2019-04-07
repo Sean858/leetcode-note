@@ -14,6 +14,7 @@ class Solution(object):
         :type target: int
         :rtype: bool
         """
+
         # Treat it as a sorted list
         if not matrix or not matrix[0]:
             return False

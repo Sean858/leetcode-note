@@ -8,6 +8,7 @@
 # ---------------------
 
 
+
 # Very important, remember the thought
 class Solution(object):
     def minWindow(self, s, t):
