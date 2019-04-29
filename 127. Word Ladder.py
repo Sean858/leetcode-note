@@ -24,7 +24,6 @@ class Solution(object):
 
         while queue:
             distance += 1
-            print
             for i in range(len(queue)):
                 word = queue.popleft()
                 if word == endWord:
