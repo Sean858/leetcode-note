@@ -31,3 +31,16 @@ class Solution(object):
             else:
                 nums[i] = Sum // nums[i]
         return nums
+
+class Solution:
+    def productExceptSelf(self, nums: List[int]) -> List[int]:
+        product = []
+        p = 1
+        for num in nums:
+            product.append(p)
+            p *= num
+        p = 1
+        for i in range(len(nums) - 1, -1, -1):
+            product[i] *= p
+            p *= nums[i]
+        return product

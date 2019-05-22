@@ -14,7 +14,6 @@ def Solution(A):
     preSum = [0]
     for a in A:
         preSum.append(preSum[-1] + a)
-    print preSum
     length = len(A)
     level = 1
     maxVal = float("-inf")
